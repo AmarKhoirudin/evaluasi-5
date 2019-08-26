@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Navbar from "./port/navbar";
+import Jumbo from "./port/jumbotron";
+import About from "./port/about";
+import Contact from "./port/contact"
+import Footer from './port/footer'
+// import Carousel from "./port/carousel"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class app extends Component {
+  state = {
+    poto: "Hello My Name Amar!"
+  };
+
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Jumbo poto={this.state.poto} />
+        <About />
+        {/* <Carousel /> */}
+        <Contact />
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App;
+export default app;

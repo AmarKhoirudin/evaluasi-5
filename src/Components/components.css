@@ -1,0 +1,28 @@
+.jumbocss {
+  height: 500px;
+}
+
+.jumgam {
+  margin: 0px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.jsabout {
+  height: 500px;
+}
+
+.contact {
+  background: grey;
+}
+
+#about {
+  padding-top: 50px;
+}
+
+#contact {
+  padding-top: 10px;
+}
+
+
+
